@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/ Query optimization techniques/query_optimization.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/ddl/ecommerce-schema.ddl.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/dml/dml.sql" dialect="GenericSQL" />
-    <file url="file://$PROJECT_DIR$/views/materialized-views.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Indexing/create_indexes.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/Indexing/show_index_info.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/ddl/create_procedure.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/ddl/create_tables.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/dml/dml.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/explian-analyize/queries.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/queries/general.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/query optimization techniques/query_optimization.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/triggers/create_trigger.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/views/create_materialized_views.sql" dialect="GenericSQL" />
   </component>
 </project>

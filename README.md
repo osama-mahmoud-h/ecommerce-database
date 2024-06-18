@@ -9,6 +9,8 @@
 * DDL 
 * DML
 * Erd diagram
+* Stored Procedures.
+* Triggers.
 * Denormalization
 * Indexing
 * Concurrency control
