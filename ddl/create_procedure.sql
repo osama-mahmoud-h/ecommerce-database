@@ -63,17 +63,38 @@ END;
 $$ LANGUAGE plpgsql;
 
 -- Function to create dummy data for Orders table
+-- CREATE OR REPLACE FUNCTION insert_dummy_orders(num_records INT) RETURNS VOID AS $$
+-- BEGIN
+--     FOR i IN 1..num_records LOOP
+--         INSERT INTO Orders (customer_id, order_date)
+--         VALUES (
+--             (SELECT user_id FROM Users WHERE role = 'CUSTOMER' ORDER BY RANDOM() LIMIT 1),
+--             CURRENT_DATE - (RANDOM() * 365)::INT
+--         );
+--     END LOOP;
+-- END;
+-- $$ LANGUAGE plpgsql;
+
+-- Optimized function to create dummy data for Orders table
 CREATE OR REPLACE FUNCTION insert_dummy_orders(num_records INT) RETURNS VOID AS $$
+DECLARE
+    customer_ids INT[];
+    num_customers INT;
 BEGIN
+    -- Preselect customer IDs
+    SELECT ARRAY(SELECT user_id FROM Users WHERE role = 'CUSTOMER') INTO customer_ids;
+    num_customers := array_length(customer_ids, 1);
+
     FOR i IN 1..num_records LOOP
         INSERT INTO Orders (customer_id, order_date)
         VALUES (
-            (SELECT user_id FROM Users WHERE role = 'CUSTOMER' ORDER BY RANDOM() LIMIT 1),
+            customer_ids[(RANDOM() * (num_customers - 1) + 1)::INT],
             CURRENT_DATE - (RANDOM() * 365)::INT
         );
     END LOOP;
 END;
 $$ LANGUAGE plpgsql;
+
 
 -- Function to create dummy data for Order_Details table
 CREATE OR REPLACE FUNCTION insert_dummy_order_details(num_records INT) RETURNS VOID AS $$

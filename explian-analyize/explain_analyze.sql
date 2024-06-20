@@ -82,17 +82,30 @@ Execution Time: 0.272 ms
 -- query
 EXPLAIN ANALYZE
     SELECT  u.user_id, u.first_name
-                FROM orders o JOIN users u on o.customer_id = u.user_id
+                FROM orders o
+                JOIN users u on o.customer_id = u.user_id
                 JOIN order_details od on o.order_id = od.order_id
                 JOIN products p on od.product_id = p.product_id
                 WHERE customer_id = 44546;
 
 
+----------------------------------------------------------------------
+-- try to run query with ordering and with out.
+-- make sure sorting have index to speed up retrieval.
 explain analyze
     select * from orders o
-             where o.order_date BETWEEN '2024-01-01' AND '2024-01-01'
-            --- order by o.order_date
-                           limit 10 ;
+             where o.order_date BETWEEN '2023-10-25' AND '2024-11-01';
+            -- order by o.order_date
+                         --  limit 10 ;
 
+select min(o.order_date),max(o.order_date)
+    from orders o;
+
+explain analyze
+SELECT user_id FROM users WHERE role = 'CUSTOMER'
+                          ORDER BY RANDOM()
+                          LIMIT 1;
+
+-- Calculate the number of rows with role 'CUSTOMER'
 
 

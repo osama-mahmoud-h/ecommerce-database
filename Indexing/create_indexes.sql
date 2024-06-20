@@ -1,9 +1,11 @@
 
 ----------------------- Users ---------------------------------
 -- Unique index on email in Users table
+DROP INDEX IF EXISTS idx_unique_email;
 CREATE UNIQUE INDEX idx_unique_email ON users(email);
 
-
+DROP INDEX IF EXISTS idx_user_role;
+CREATE INDEX idx_user_role ON users(role);
 ------------------------ Addresses ----------------------------
 CREATE INDEX idx_user_id ON addresses(user_id);
 
@@ -19,8 +21,8 @@ CREATE INDEX idx_customer_id ON orders(customer_id);
 DROP INDEX IF EXISTS idx_customer_id;
 
 -- create brin index for order_date.
-CREATE INDEX idx_order_date ON orders using brin(order_date);
-DROP INDEX IF EXISTS idx_order_date;
+CREATE INDEX idx_order_date_brin ON orders using brin(order_date);
+DROP INDEX IF EXISTS idx_order_date_brin;
 
 -- create b-tree index for sorting
 CREATE INDEX idx_order_date_btree ON orders USING btree(order_date);
