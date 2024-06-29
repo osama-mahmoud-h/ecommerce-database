@@ -33,7 +33,8 @@
 │   ├── DENORMALIZATION.md
 │
 ├── Indexing
-│   ├── indexing.sql
+│   ├── create_indexes.sql
+│   ├── show_indexes_info.sql
 │   ├── INDEXING.md
 │
 ├── Concurrency Control
@@ -92,7 +93,8 @@
   - [DENORMALIZATION.md](./denormalization/DENORMALIZATION.md)
 
 - **Indexing**
-  - [indexing.sql](./indexing/indexing.sql)
+  - [create_indexes.sql](./indexing/indexing.sql)
+  - [show_indexes_info.sql](./indexing/show_indexes_info.sql)
   - [INDEXING.md](./indexing/INDEXING.md)
 
 - **Concurrency Control**
@@ -108,9 +110,9 @@
   - [ISOLATION_LEVELS.md](./isolation_levels/ISOLATION_LEVELS.md)
 
 - **DDL**
-  - [create_table.sql](./ddl/create_table.sql)
+  - [create_table.sql](./ddl/create_tables.sql)
   - [create_procedure.sql](./ddl/create_procedure.sql)
-  - [DDL.md](./DDL/DDL.md)
+  - [DDL.md](./ddl/DDL.md)
 
 - **DML**
   - [dml.sql](./dml/dml.sql)

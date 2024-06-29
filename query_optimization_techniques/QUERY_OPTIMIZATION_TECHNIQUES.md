@@ -179,7 +179,7 @@ CREATE INDEX idx_orders_customer_id ON Orders(customer_id);
 CREATE INDEX idx_orderdetails_order_id ON OrderDetails(order_id);
 
 -- Optimized join query
-SELECT Orders.order_id, Orders.order_date, users.first_name, Customers.last_name
+SELECT Orders.order_id, Orders.order_date, users.first_name, users.last_name
 FROM Orders
 JOIN users ON Orders.customer_id = users.user_id
 WHERE Orders.order_date > '2024-01-01';
