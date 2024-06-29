@@ -92,16 +92,16 @@
   - [DENORMALIZATION.md](./denormalization/DENORMALIZATION.md)
 
 - **Indexing**
-  - [indexing.sql](./Indexing/indexing.sql)
-  - [INDEXING.md](./Indexing/INDEXING.md)
+  - [indexing.sql](./indexing/indexing.sql)
+  - [INDEXING.md](./indexing/INDEXING.md)
 
 - **Concurrency Control**
   - [concurrency_control.sql](./concurrency_control/concurrency_control.sql)
   - [CONCURRENCY_CONTROL.md](./concurrency_control/CONCURRENCY_CONTROL.md)
 
 - **Locking**
-  - [locking.sql](./Locking/locking.sql)
-  - [LOCKING.md](./Locking/LOCKING.md)
+  - [locking.sql](./locking/locking.sql)
+  - [LOCKING.md](./locking/LOCKING.md)
 
 - **Isolation Levels**
   - [isolation_levels.sql](./isolation_levels/isolation_levels.sql)
