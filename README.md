@@ -57,6 +57,10 @@
 │   ├── dml.sql
 │   ├── DML.md
 │
+├── explain_analyze
+│   ├── explain_analyze.sql
+│   ├── EXPLAIN_ANALYZE.md
+│
 ├── ERD
 │   ├── ecommerce.png
 │
@@ -80,40 +84,43 @@
 ### Read more:
 
 - **Query Optimization Techniques**
-  - [query_optimization.sql](./Query%20Optimization%20Techniques/query_optimization.sql)
-  - [QUERY_OPTIMIZATION_TECHNIQUES.md](./Query%20Optimization%20Techniques/QUERY_OPTIMIZATION_TECHNIQUES.md)
+  - [query_optimization.sql](./query_optimization_techniques/query_optimization.sql)
+  - [QUERY_OPTIMIZATION_TECHNIQUES.md](./query_optimization_techniques/QUERY_OPTIMIZATION_TECHNIQUES.md)
   
 - **Denormalization**
-  - [denormalization.sql](./Denormalization/denormalization.sql)
-  - [DENORMALIZATION.md](./Denormalization/DENORMALIZATION.md)
+  - [denormalization.sql](./denormalization/denormalization.sql)
+  - [DENORMALIZATION.md](./denormalization/DENORMALIZATION.md)
 
 - **Indexing**
   - [indexing.sql](./Indexing/indexing.sql)
   - [INDEXING.md](./Indexing/INDEXING.md)
 
 - **Concurrency Control**
-  - [concurrency_control.sql](./Concurrency%20Control/concurrency_control.sql)
-  - [CONCURRENCY_CONTROL.md](./Concurrency%20Control/CONCURRENCY_CONTROL.md)
+  - [concurrency_control.sql](./concurrency_control/concurrency_control.sql)
+  - [CONCURRENCY_CONTROL.md](./concurrency_control/CONCURRENCY_CONTROL.md)
 
 - **Locking**
   - [locking.sql](./Locking/locking.sql)
   - [LOCKING.md](./Locking/LOCKING.md)
 
 - **Isolation Levels**
-  - [isolation_levels.sql](./Isolation%20Levels/isolation_levels.sql)
-  - [ISOLATION_LEVELS.md](./Isolation%20Levels/ISOLATION_LEVELS.md)
+  - [isolation_levels.sql](./isolation_levels/isolation_levels.sql)
+  - [ISOLATION_LEVELS.md](./isolation_levels/ISOLATION_LEVELS.md)
 
 - **DDL**
-  - [create_table.sql](./DDL/create_table.sql)
-  - [create_procedure.sql](./DDL/create_procedure.sql)
+  - [create_table.sql](./ddl/create_table.sql)
+  - [create_procedure.sql](./ddl/create_procedure.sql)
   - [DDL.md](./DDL/DDL.md)
 
 - **DML**
-  - [dml.sql](./DML/dml.sql)
-  - [DML.md](./DML/DML.md)
+  - [dml.sql](./dml/dml.sql)
+  - [DML.md](./dml/DML.md)
+- **explain_analyze**
+  - [explain_analyze.sql](./explain_analyze/explain_analyze.sql)
+  - [EXPLAIN_ANALYZE.md](./explain_analyze/EXPLAIN_ANALYZE.md)  
 
 - **ERD**
-  - [ecommerce.png](./ERD/ecommerce.png)
+  - [ecommerce.png](./erd/ecommerce.png)
 
 - [README.md](./README.md)
 
