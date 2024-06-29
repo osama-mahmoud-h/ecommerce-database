@@ -138,19 +138,3 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- Function to create dummy data for Sale_History table
-CREATE OR REPLACE FUNCTION insert_dummy_sale_history(num_records INT) RETURNS VOID AS $$
-BEGIN
-    FOR i IN 1..num_records LOOP
-        INSERT INTO Sale_History (order_id, sale_date, customer_id, product_id, total_amount, quantity)
-        VALUES (
-            (SELECT order_id FROM Orders ORDER BY RANDOM() LIMIT 1),
-            CURRENT_DATE - (RANDOM() * 365)::INT,
-            (SELECT user_id FROM Users WHERE role = 'CUSTOMER' ORDER BY RANDOM() LIMIT 1),
-            (SELECT product_id FROM Products ORDER BY RANDOM() LIMIT 1),
-            ROUND(CAST(RANDOM() * 500 AS  NUMERIC), 2),
-            (RANDOM() * 10)::INT + 1
-        );
-    END LOOP;
-END;
-$$ LANGUAGE plpgsql;

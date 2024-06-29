@@ -1,4 +1,5 @@
 
+EXPLAIN analyze SELECT user_id FROM Users WHERE role = 'CUSTOMER';
 
 -- run query after/before create index on orders(customer_id).
 -- this query retrieve all orders for specific customer.
