@@ -81,7 +81,7 @@
   * cart_items
   * addresses
 
-### Read more:
+## Read more Details in each topic:
 
 - **Query Optimization Techniques**
   - [query_optimization.sql](./query_optimization_techniques/query_optimization.sql)
@@ -122,6 +122,5 @@
 - **ERD**
   - [ecommerce.png](./erd/ecommerce.png)
 
-- [README.md](./README.md)
 
 
