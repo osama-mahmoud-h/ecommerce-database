@@ -8,6 +8,10 @@
     <file url="file://$PROJECT_DIR$/dml/dml.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/explain_analyze/explain_analyze.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/query_optimization_techniques/query_optimization.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/tasks/task1.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/tasks/task2.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/tasks/task3.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/tasks/task4.sql" dialect="PostgreSQL" />
     <file url="file://$PROJECT_DIR$/triggers/create_trigger.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/views/create_materialized_views.sql" dialect="GenericSQL" />
     <file url="PROJECT" dialect="PostgreSQL" />

@@ -65,6 +65,12 @@
 ├── ERD
 │   ├── ecommerce.png
 │
+├── tasks
+│   ├── task1.sql
+│   ├── task2.sql
+│   ├── task3.sql
+│   ├── task4.sql
+│   ├── TASKS.md
 ├── README.md
 ```
 
@@ -123,6 +129,12 @@
 
 - **ERD**
   - [ecommerce.png](./erd/ecommerce.png)
+- **Tasks**
+  - [task1.sql](./tasks/task1.sql)
+  - [task2.sql](./tasks/task2.sql)
+  - [task3.sql](./tasks/task3.sql)
+  - [task4.sql](./tasks/task4.sql)
+  - [TASKS.md](./tasks/TASKS.md)
 
 
 
