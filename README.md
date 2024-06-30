@@ -18,6 +18,8 @@
 * Isolation levels
 * Query optimization techniques
 * views
+* explain analyze
+* tasks / challenges
 
 ### database erd:
 ![image](erd/ecommerce.png)
