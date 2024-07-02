@@ -12,8 +12,8 @@ CREATE INDEX idx_user_id ON addresses(user_id);
 ------------------------ Products ------------------------------------
 
 --create/drop index on foreign key category_id.
-DROP INDEX IF EXISTS idx_category_id;
-CREATE INDEX idx_category_id ON products(category_id);
+DROP INDEX IF EXISTS idx_products_category_id;
+CREATE INDEX idx_products_category_id ON products(category_id);
 
 -- create /drop index on foreign key seller_id.
 DROP INDEX IF EXISTS idx_seller_id;
